@@ -22,5 +22,19 @@ class CoolStringTest {
         assertThrows(NullPointerException.class,
                 () -> sut = new CoolString(null));
     }
+    @Test
+    void setValueShouldUpdateValue() {
+        sut.setValue("eiemi");
+        assertEquals(sut.getValue(), "eiemi");
+    }
+    @Test
+    void toStringReturnsSameValue() {
+        assertEquals(sut.getValue(), sut.toString());
+    }
+    @Test
+    void setNewValueAndSeeIfToStringReturnsThat() {
+        sut.setValue("Harry Potter");
+        assertEquals(sut.getValue(), sut.toString());
+    }
     
 }

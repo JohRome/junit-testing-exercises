@@ -9,16 +9,13 @@ class CoolStringTest {
     CoolString sut;
 
     @Test
-    void canCreateInstanceOfCoolStringWithString() {
+    void canCreateInstanceOfCoolStringWithStringValue() {
         // Arrange
         String value = "johan";
-        String expected = "johan";
-
-        // Act
         sut = new CoolString(value);
 
         // Assert
-        assertEquals(expected, value);
+        assertEquals(sut.getValue(), "johan");
     }
     @Test
     void nullValueInConstructorShouldThrowNullPointerException() {
@@ -29,5 +26,4 @@ class CoolStringTest {
         assertThrows(NullPointerException.class,
                 () -> sut = new CoolString(value));
     }
-
 }

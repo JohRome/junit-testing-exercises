@@ -9,4 +9,8 @@ public class CoolString {
         else
             this.value = value;
     }
+
+    public String getValue() {
+        return value;
+    }
 }

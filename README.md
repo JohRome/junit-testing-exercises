@@ -1,2 +1,2 @@
-# junit-testing-exercises
-Alla KVS övningar samlade - på ett och samma ställe
+# JUnit school exercises - all bunched in one place
+In the src/ folder you will find all the exercises regarding JUnit Test and TDD

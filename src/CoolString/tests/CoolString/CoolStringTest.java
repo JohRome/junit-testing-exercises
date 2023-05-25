@@ -16,12 +16,12 @@ class CoolStringTest {
 
         // Act
         sut = new CoolString(value);
-        
+
         // Assert
         assertEquals(expected, value);
     }
     @Test
-    void nullValueInConstructorShouldThrowNewNullPointerException() {
+    void nullValueInConstructorShouldThrowNullPointerException() {
         // Arrange
         String value = null;
 

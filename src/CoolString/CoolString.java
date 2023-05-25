@@ -22,4 +22,7 @@ public class CoolString {
     public String toString() {
         return value;
     }
+    public boolean equals(Object obj) {
+        return obj.equals(getValue());
+    }
 }

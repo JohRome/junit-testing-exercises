@@ -36,5 +36,15 @@ class CoolStringTest {
         sut.setValue("Harry Potter");
         assertEquals(sut.getValue(), sut.toString());
     }
+    @Test
+    void makingSureTwoIdenticalObjectsAreEqual() {
+        CoolString test = new CoolString("johan");
+        assertEquals(sut, test);
+    }
+    @Test
+    void makingSureTwoNotIdenticalObjectsAreNotEqual() {
+        CoolString test = new CoolString("eiemi");
+        assertNotEquals(sut,test);
+    }
     
 }

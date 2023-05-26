@@ -13,7 +13,7 @@ public class Calculator {
      * @return the sum of the two numbers
      */
     public double add(double n1, double n2) {
-        return 0;
+        return n1 + n2;
     }
 
     /**

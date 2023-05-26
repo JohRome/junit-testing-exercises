@@ -79,4 +79,5 @@ class CoolStringTest {
         CoolString test = new CoolString("eiemi");
         assertNotEquals(sut,test);
     }
+    
 }

@@ -24,8 +24,14 @@ public class Calculator {
      * @return the difference between the two numbers
      */
     public double subtract(double n1, double n2) {
-        // Need to add all subraction possibilities
-       return n1 - n2;
+        boolean isN1BelowZero = n1 < 0;
+        boolean isN2BelowZero = n2 < 0;
+        boolean isBothBelowZero = (n1 < 0 && n2 < 0);
+
+        if (isBothBelowZero) {
+            throw new IllegalArgumentException("Sorry, I cannot let you subtract two negative numbers");
+        }
+        return n1 - n2;
     }
 
     /**

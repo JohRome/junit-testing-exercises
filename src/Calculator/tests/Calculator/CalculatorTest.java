@@ -28,5 +28,10 @@ class CalculatorTest {
         double result = sut.subtract(n1, n2);
         assertEquals(result, expected);
     }
-
+    @ParameterizedTest
+    @CsvSource({"-1, -1"})
+    void subtractTwoNegativesShouldThrowIllegalArgumentException(double n1, double n2) {
+        assertThrows(IllegalArgumentException.class,
+                () -> sut.subtract(n1,n2));
+    }
 }
